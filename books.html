@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Index</title>
+  <meta charset="utf-8">
+  <link href="styles/books.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div class="display">
+    <h1>Books</h1>
+    <div class="dropdown">
+      <button class="dropbtn" id="new-book">+</button>
+      <form class="dropdown-content" id="book-form" name=
+      "book-form">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="author" placeholder="Author">
+        <input type="number" name="page-count" placeholder="Pages"
+        min="0">
+        <div class="dual-radio">
+          <input type="radio" name="read"> <label for=
+          "read-true">Read</label> <input type="radio" name="read"
+          value="Not Read" checked> <label for="read-false">Not
+          Read</label>
+        </div>
+        <div class="finish-form">
+          <input type="button" value="Add" id="save-book">
+          <input type="button" value="Cancel" id="close-form">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="shelves">
+    <div class="shelf" id="shelf_0">
+      <div class="book" data-book-index="0">
+        <span>Moby Dick or, the Whale</span>
+        <button class="info book-button">i</button>
+        <button class="remove-book book-button">x</button>
+        <button class="book-options book-button">?</button>
+      </div>
+      <div class="book" data-book-index="1">
+        <span>To Kill a Mocking Bird</span>
+        <button class="info book-button">i</button>
+        <button class="remove-book book-button">x</button>
+        <button class="book-options book-button">?</button>
+      </div>
+      <div class="book" data-book-index="2">
+        <span>One Flew Over The Cuckoo's Nest</span>
+        <button class="info book-button">i</button>
+        <button class="remove-book book-button">x</button>
+        <button class="book-options book-button">?</button>
+      </div>
+      <div class="book" data-book-index="3">
+        <span>House of the Scorpion</span>
+        <button class="info book-button">i</button>
+        <button class="remove-book book-button">x</button>
+        <button class="book-options book-button">?</button>
+      </div>
+      <div class="book" data-book-index="4">
+        <span>Things Fall Apart</span>
+        <button class="info book-button">i</button>
+        <button class="remove-book book-button">x</button>
+        <button class="book-options book-button">?</button>
+      </div>
+      <div class="book" data-book-index="5">
+        <span>Fahrenheit 451</span>
+        <button class="info book-button">i</button>
+        <button class="remove-book book-button">x</button>
+        <button class="book-options book-button">?</button>
+      </div>
+      <div class="book" data-book-index="6">
+        <span>Clean Code: Agile Handbook</span>
+        <button class="info book-button">i</button>
+        <button class="remove-book book-button">x</button>
+        <button class="book-options book-button">?</button>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/books.js"></script>
+</body>
+</html>
